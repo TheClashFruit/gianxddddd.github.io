@@ -1,0 +1,167 @@
+.background {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://scontent.fcgm1-1.fna.fbcdn.net/v/t39.30808-6/278868919_1626624521070167_6193059164054167255_n.png?stp=dst-png_s960x960&_nc_cat=102&ccb=1-7&_nc_sid=e3f864&_nc_eui2=AeFtt0ymFKOAy01oROD73pdvtN-bjtcc2Rm035uO1xzZGRBKrdFkZy99XRSIkMX2T6JPbKyuBJ7n9ewDVGF9ZbKj&_nc_ohc=UpBHIsTs2bYAX8VbqiN&_nc_ht=scontent.fcgm1-1.fna&oh=00_AT8z_o8LXdjr6RsyKlNK25WIpArogXpcKp9d7wvGf2MVUA&oe=628CF811");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.content {
+	width: 50%;
+	margin: auto;
+}
+
+.content h1 {
+	color: white;
+	font-family: 'Roboto Flex', sans-serif;
+}
+
+.content p {
+	color: white;
+	font-family: 'Roboto Flex', sans-serif;
+}
+
+.container {
+	overflow: hidden;
+	background-color: #f1f1f1;
+	padding: 10px 10px;
+	border-radius: 4px;
+	margin-bottom: 8px;
+}
+
+.container a {
+	float: left;
+	color: gray;
+	text-align: center;
+	padding: 12px;
+	text-decoration: none;
+	font-size: 18px;
+	line-height: 25px;
+	border-radius: 4px;
+	font-family: 'Roboto Flex', sans-serif;
+	animation-duration: 0.5s;
+	animation-fill-mode: backwards;
+	animation-name: hoverOut;
+}
+
+.container .stylish-text {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://cdn.discordapp.com/attachments/959034379101937694/961162523485274152/sus.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50%;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+	animation-duration: 0.5s;
+	animation-fill-mode: backwards;
+	animation-name: scaleBgOut;
+}
+
+.container .stylish-text:hover {
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+	animation-name: scaleBgIn;
+}
+
+.container .button-icon {
+	cursor: pointer;
+	float: left;
+	color: gray;
+	padding: 12px;
+	line-height: 25px;
+	border-radius: 30px;
+	animation-duration: 0.5s;
+	animation-fill-mode: backwards;
+	animation-name: hoverOut;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.container .button-icon:hover {
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+	animation-name: hoverIn;
+}
+
+.container-buttons {
+	float: right;
+}
+
+.readme {
+	padding: 16px;
+}
+
+@keyframes hoverIn {
+	from {
+		background-color: transparent;
+	}
+
+	to {
+		background-color: #ddd;
+	}
+}
+
+@keyframes hoverOut {
+	from {
+		background-color: #ddd;
+	}
+
+	to {
+		background-color: transparent;
+	}
+}
+
+@keyframes scaleBgIn {
+	from {
+		background-size: 100%;
+	}
+
+	to {
+		background-size: 150%;
+	}
+}
+
+@keyframes scaleBgOut {
+	from {
+		background-size: 150%;
+	}
+
+	to {
+		background-size: 100%;
+	}
+}
+
+@keyframes turnToLight {
+	from {
+		background-color: #333333;
+	}
+
+	to {
+		background-color: #f1f1f1;
+	}
+}
+@keyframes turnToDark {
+	from {
+		background-color: #f1f1f1;
+	}
+
+	to {
+		background-color: #333333;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.container a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+	
+	.container-buttons {
+		float: none;
+	}
+}
