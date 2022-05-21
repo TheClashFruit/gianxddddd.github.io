@@ -26,5 +26,5 @@ function toggleDark() {
 }
 
 function goFallback() {
-	window.location.href = "fallback/index.html"
+	window.location.href = "fallback/index"
 }
