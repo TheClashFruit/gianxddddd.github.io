@@ -1,0 +1,19 @@
+@keyframes hoverIn {
+	from {
+		background-color: transparent;
+	}
+
+	to {
+		background-color: #212121;
+	}
+}
+
+@keyframes hoverOut {
+	from {
+		background-color: #212121;
+	}
+
+	to {
+		background-color: transparent;
+	}
+}

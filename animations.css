@@ -1,0 +1,39 @@
+@keyframes hoverIn {
+	from {
+		background-color: transparent;
+	}
+
+	to {
+		background-color: lightgray;
+	}
+}
+
+@keyframes hoverOut {
+	from {
+		background-color: lightgray;
+	}
+
+	to {
+		background-color: transparent;
+	}
+}
+
+@keyframes scaleBgIn {
+	from {
+		background-size: 100%;
+	}
+
+	to {
+		background-size: 150%;
+	}
+}
+
+@keyframes scaleBgOut {
+	from {
+		background-size: 150%;
+	}
+
+	to {
+		background-size: 100%;
+	}
+}

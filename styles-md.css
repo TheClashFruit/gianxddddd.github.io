@@ -1,31 +1,16 @@
-h1 {
-	color: gray;
+h1, h2, h3, h4, h5, h6, p, li {
+	color: black;
 }
 
-h2 {
-	color: gray;
+@media (prefers-color-scheme: light) {
+	h1, h2, h3, h4, h5, h6, p, li {
+		color: black;
+	}
 }
 
-h3 {
-	color: gray;
-}
-
-h4 {
-	color: gray;
-}
-
-h5 {
-	color: gray;
-}
-
-h6 {
-	color: gray;
-}
-
-p {
-	color: gray;
-}
-
-li {
-	color: gray;
+@media (prefers-color-scheme: dark) {
+	h1, h2, h3, h4, h5, h6, p, li {
+		color: white;
+		border-style: none;
+	}
 }
