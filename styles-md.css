@@ -1,16 +1,30 @@
-h1, h2, h3, h4, h5, h6, p, li {
+h1, h2 {
+	color: black;
+	border-bottom: 1px solid black !important;
+}
+
+h3, h4, h5, h6, p, li {
 	color: black;
 }
 
 @media (prefers-color-scheme: light) {
-	h1, h2, h3, h4, h5, h6, p, li {
+	h1, h2 {
+		color: black;
+		border-bottom: 1px solid black !important;
+	}
+
+	h3, h4, h5, h6, p, li {
 		color: black;
 	}
 }
 
 @media (prefers-color-scheme: dark) {
-	h1, h2, h3, h4, h5, h6, p, li {
+	h1, h2 {
 		color: white;
-		border-style: none;
+		border-bottom: 1px solid white !important;
+	}
+
+	h3, h4, h5, h6, p, li {
+		color: white;
 	}
 }
