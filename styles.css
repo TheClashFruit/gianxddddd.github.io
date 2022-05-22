@@ -52,13 +52,13 @@
 	color: white;
 	font-size: 18px;
 	font-weight: bold;
-	animation-duration: 0.5s;
+	animation-duration: 0.3s;
 	animation-fill-mode: backwards;
 	animation-name: scaleBgOut;
 }
 
 .container .stylish-text:hover {
-	animation-duration: 0.5s;
+	animation-duration: 0.3s;
 	animation-fill-mode: forwards;
 	animation-name: scaleBgIn;
 }
@@ -70,7 +70,7 @@
 	padding: 12px;
 	line-height: 25px;
 	border-radius: 30px;
-	animation-duration: 0.5s;
+	animation-duration: 0.1s;
 	animation-fill-mode: backwards;
 	animation-name: hoverOut;
 	-webkit-touch-callout: none;
@@ -82,7 +82,7 @@
 }
 
 .container .button-icon:hover {
-	animation-duration: 0.5s;
+	animation-duration: 0.1s;
 	animation-fill-mode: forwards;
 	animation-name: hoverIn;
 }
