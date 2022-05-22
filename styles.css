@@ -159,6 +159,10 @@
 		background-attachment: scroll;
 	}
 
+	.content {
+		width: auto;
+	}
+
 	.container a {
 		float: none;
 		display: block;
