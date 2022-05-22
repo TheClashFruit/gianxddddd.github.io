@@ -1,9 +1,10 @@
 .background {
-	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://scontent.fcgm1-1.fna.fbcdn.net/v/t39.30808-6/278868919_1626624521070167_6193059164054167255_n.png?stp=dst-png_s960x960&_nc_cat=102&ccb=1-7&_nc_sid=e3f864&_nc_eui2=AeFtt0ymFKOAy01oROD73pdvtN-bjtcc2Rm035uO1xzZGRBKrdFkZy99XRSIkMX2T6JPbKyuBJ7n9ewDVGF9ZbKj&_nc_ohc=UpBHIsTs2bYAX8VbqiN&_nc_ht=scontent.fcgm1-1.fna&oh=00_AT8z_o8LXdjr6RsyKlNK25WIpArogXpcKp9d7wvGf2MVUA&oe=628CF811");
+	background: linear-gradient(rgba(0, 0, 0, 0.5), #00000080), url("https://images.unsplash.com/photo-1646121576173-1fc5392a8783?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDh8Ym84alFLVGFFMFl8fGVufDB8fHx8&auto=format");
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	height: 100%;
 }
 
 .content {
