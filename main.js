@@ -1,5 +1,14 @@
 var hasToggledDark = false
 
+document.onreadystatechange = function () {
+	if (document.readyState === "complete" && window.matchMedia
+		&& window.matchMedia("(prefers-color-scheme: dark)").matches) {
+		// System is using dark theme, switch website to dark theme automatically
+		if (hasToggledDark) hasToggledDark = false
+		toggleDark()
+	}
+}
+
 function toggleDark() {
 	var header = document.getElementById("header")
 	var readmeContainer = document.getElementById("readme-container")
