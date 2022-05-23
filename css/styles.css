@@ -8,6 +8,9 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	animation-duration: 1.5s;
+	animation-name: scaleBgOut;
+	animation-fill-mode: forwards;
 }
 
 .content {
