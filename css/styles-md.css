@@ -7,6 +7,10 @@ h3, h4, h5, h6, p, li {
 	color: black;
 }
 
+img {
+	background-color: transparent !important;
+}
+
 @media (prefers-color-scheme: light) {
 	h1, h2 {
 		color: black;
