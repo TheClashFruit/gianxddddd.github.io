@@ -10,7 +10,7 @@
 	background-size: cover;
 	animation-duration: 1.5s;
 	animation-name: scaleBgOut;
-	animation-fill-mode: forwards;
+	animation-fill-mode: backwards;
 }
 
 .content {
@@ -18,12 +18,7 @@
 	margin: auto;
 }
 
-.content h1 {
-	color: white;
-	font-family: 'Roboto Flex', sans-serif;
-}
-
-.content p {
+.content .footer {
 	color: white;
 	font-family: 'Roboto Flex', sans-serif;
 }
@@ -34,68 +29,6 @@
 	padding: 10px 10px;
 	border-radius: 4px;
 	margin-bottom: 8px;
-}
-
-.container a {
-	float: left;
-	color: black;
-	text-align: center;
-	padding: 12px;
-	text-decoration: none;
-	font-size: 18px;
-	line-height: 25px;
-	border-radius: 4px;
-	font-family: 'Roboto Flex', sans-serif;
-	animation-duration: 0.5s;
-	animation-fill-mode: backwards;
-	animation-name: hoverOut;
-}
-
-.container .stylish-text {
-	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://cdn.discordapp.com/attachments/959034379101937694/961162523485274152/sus.png");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: 50%;
-	color: white;
-	font-size: 18px;
-	font-weight: bold;
-	animation-duration: 0.3s;
-	animation-fill-mode: backwards;
-	animation-name: scaleBgOut;
-}
-
-.container .stylish-text:hover {
-	animation-duration: 0.3s;
-	animation-fill-mode: forwards;
-	animation-name: scaleBgIn;
-}
-
-.container .button-icon {
-	cursor: pointer;
-	float: left;
-	color: black;
-	padding: 12px;
-	line-height: 25px;
-	border-radius: 30px;
-	animation-duration: 0.1s;
-	animation-fill-mode: backwards;
-	animation-name: hoverOut;
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-}
-
-.container .button-icon:hover {
-	animation-duration: 0.1s;
-	animation-fill-mode: forwards;
-	animation-name: hoverIn;
-}
-
-.container-buttons {
-	float: right;
 }
 
 .readme {
@@ -110,15 +43,5 @@
 
 	.content {
 		width: auto;
-	}
-
-	.container a {
-		float: none;
-		display: block;
-		text-align: left;
-	}
-	
-	.container-buttons {
-		float: none;
 	}
 }
