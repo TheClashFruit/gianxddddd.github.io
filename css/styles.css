@@ -18,17 +18,17 @@
 	margin: auto;
 }
 
-.content .footer {
-	color: white;
-	font-family: 'Roboto Flex', sans-serif;
-}
-
 .container {
 	overflow: hidden;
 	background-color: #f1f1f1;
 	padding: 10px 10px;
 	border-radius: 4px;
 	margin-bottom: 8px;
+}
+
+.content .footer {
+	color: white;
+	font-family: 'Roboto Flex', sans-serif;
 }
 
 .readme {
