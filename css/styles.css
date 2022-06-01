@@ -46,4 +46,8 @@
 	.content {
 		width: auto;
 	}
+
+	.content .footer {
+		margin: 16px;
+	}
 }
