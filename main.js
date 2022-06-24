@@ -41,7 +41,16 @@ window.onload = function () {
 		stopInterval();
 	});
 
-	// Register hover event for the quote
+	// Register hover event for some elements
+	$(".image").hover(function () {
+		$(this).stop(true).fadeTo("fast", 0.5, function () {
+			$(this).attr("src", "./assets/image_irl.jpg");
+		}).fadeTo("fast", 1);
+	}, function () {
+		$(this).stop(true).fadeTo("fast", 0.5, function () {
+			$(this).attr("src", "./assets/image.png");
+		}).fadeTo("fast", 1);
+	});
 	$(".quote").hover(function () {
 		stopInterval();
 	}, function () {

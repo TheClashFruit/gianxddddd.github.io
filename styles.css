@@ -1,5 +1,9 @@
-body {
-	background: #2a2727;
+body, html {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/bg1.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .card {
@@ -36,7 +40,7 @@ body {
 
 .quote {
 	font-size: 100%;
-	color: gray;
-	margin-right: 8px;
+	color: #BEBEBE;
+	margin-right: 12px;
 	font-family: 'Roboto Flex Thin', sans-serif;
 }
