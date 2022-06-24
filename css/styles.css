@@ -1,53 +1,42 @@
-:root {
-	color-scheme: light dark;
+body {
+	background: #2a2727;
 }
 
-.background {
-	background: linear-gradient(rgba(0, 0, 0), #00000080), url("https://images.unsplash.com/photo-1646121576173-1fc5392a8783?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDh8Ym84alFLVGFFMFl8fGVufDB8fHx8&auto=format");
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	animation-duration: 1.5s;
-	animation-name: scaleBgOut;
-	animation-fill-mode: backwards;
-}
-
-.content {
-	width: 50%;
+.card {
+	display: flex;
+	position: absolute;
 	margin: auto;
+	overflow: auto;
+	width: 450px;
+	height: 150px;
+	max-width: 100%;
+	max-height: 100%;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
 }
 
-.container {
-	overflow: hidden;
-	background-color: #f1f1f1;
-	padding: 10px 10px;
-	border-radius: 4px;
-	margin-bottom: 8px;
+.card-texts {
+	text-align: right;
+	flex: 1;
 }
 
-.content .footer {
+.image {
+	margin: 16px;
+	border-radius: 50%;
+}
+
+.header {
+	font-size: 300%;
+	height: 30px;
 	color: white;
-	font-family: 'Roboto Flex', sans-serif;
+	font-family: 'Roboto Flex Bold', sans-serif;
 }
 
-.readme {
-	padding: 16px;
-}
-
-@media screen and (max-width: 768px) {
-	.background {
-		background: url("https://images.unsplash.com/photo-1646121576173-1fc5392a8783?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDh8Ym84alFLVGFFMFl8fGVufDB8fHx8&auto=format");
-		background-attachment: scroll;
-		background-size: cover;
-		animation-name: none;
-	}
-
-	.content {
-		width: auto;
-	}
-
-	.content .footer {
-		margin: 16px;
-	}
+.quote {
+	font-size: 100%;
+	color: gray;
+	margin-right: 8px;
+	font-family: 'Roboto Flex Thin', sans-serif;
 }
