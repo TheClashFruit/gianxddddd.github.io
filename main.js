@@ -1,18 +1,14 @@
-const quotes = ["Lazy developer", 
-	"Who likes to code but has no projects to work with" +
-	" and has no motivation to continue coding.", "@gianxddddd", "Me when yo mom",
-	"Deez Nuts gotem", "aka Gian Borcillo", "or GianXD#1059 on Discord", "I was travelling" +
-	" to a city called Ganoo City. I dropped my briefcase after seeing a small figure of" +
-	" a penguin named Tusk (yes the name is actually tusk no joke asshole), then I took it home" +
-	" then, the penguin started talking, asked me to install a free operating system called Linux" +
-	", out of curiousity, I downloaded and installed it, and when I saw the desktop..." +
-	" I SAW AMOGUS 420!!! SUSSY BAKA BROOOO!!! HGAHAHAH GOTEM THANKS FOR READING BTW..."];
+const quotes = ["\"Lazy developer\"", 
+	"\"Who likes to code but doesn't have a project to work in" +
+	" and has no motivation to continue coding.\"", "@gianxddddd", "Are you seeing this?",
+	"\"Deez Nuts gotem\"", "aka Gian Borcillo", "or GianXD#1059 on Discord", "\"If she dies, I die too.\"",
+	"\"Your Mom\"", "\"I have been living for 15 years now.\"", "\"I like to drink coca-cola\""];
 var intervalId;
 
 function changeQuote() {
 	if (document.readyState !== "complete") return;
 	$(".quote").fadeOut(function () {
-		var randomQuote = `"${quotes[Math.floor(Math.random() * quotes.length)]}"`;
+		var randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
 		if (randomQuote != $(this).text()) {
 			$(this).text(randomQuote).fadeIn();
@@ -27,7 +23,7 @@ function changeQuote() {
 
 function startInterval() {
 	if (intervalId) return;
-	intervalId = setInterval(changeQuote, 1000);
+	intervalId = setInterval(changeQuote, 5000);
 }
 
 function stopInterval() {
