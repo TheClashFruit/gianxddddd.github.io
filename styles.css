@@ -12,18 +12,51 @@ body, html {
 	margin: auto;
 	overflow: auto;
 	width: 450px;
-	height: 150px;
-	max-width: 100%;
-	max-height: 100%;
+	max-height: 170px;
 	left: 0;
 	right: 0;
 	top: 0;
 	bottom: 0;
 }
 
-.card-texts {
+.card-contents {
 	text-align: right;
 	flex: 1;
+}
+
+.card-links {
+	margin-top: 8px;
+}
+
+.card-link {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	margin: 4px;
+}
+
+.card-button {
+	border: none;
+	background: none;
+}
+
+.card-link:hover .tooltip {
+	visibility: visible;
+}
+
+.card-link .tooltip::after {
+	content: " ";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: black transparent transparent transparent;
+}
+
+.link-img {
+	width: 25px;
 }
 
 .image {
@@ -45,13 +78,29 @@ body, html {
 	font-family: 'Roboto Flex Thin', sans-serif;
 }
 
+.tooltip {
+	visibility: hidden;
+	position: absolute;
+	margin-left: -60px;
+	width: 120px;
+	bottom: 100%;
+	left: 50%;
+	padding: 5px 0;
+	border-radius: 6px;
+	z-index: 1;
+	background-color: black;
+	color: #fff;
+	font-family: 'Roboto Flex', sans-serif;
+	text-align: center;
+}
+
 @media (max-width: 500px) {
 	.card {
 		display: block;
-		height: 400px;
+		max-height: 450px;
 	}
 
-	.card-texts {
+	.card-contents {
 		text-align: center;
 	}
 
