@@ -1,7 +1,7 @@
 const quotes = ["\"Lazy developer\"", 
 	"\"Who likes to code but doesn't have a project to work in" +
 	" and has no motivation to continue coding.\"", "@gianxddddd", "Are you seeing this?",
-	"\"Deez Nuts gotem\"", "aka Gian Borcillo", "or GianXD#1059 on Discord", "\"If she dies, I die too.\"",
+	"\"Deez Nuts gotem\"", "aka Gian Borcillo", "or GianXD#1059 on Discord", "\"You are visiting a shit website.\"",
 	"\"Your Mom\"", "\"I have been living for 15 years now.\"", "\"I like to drink coca-cola\""];
 var intervalId;
 
