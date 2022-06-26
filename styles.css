@@ -33,27 +33,12 @@ body, html {
 	display: inline-block;
 	cursor: pointer;
 	margin: 4px;
+	user-select: none;
 }
 
 .card-button {
 	border: none;
 	background: none;
-	user-select: none;
-}
-
-.card-link:hover .tooltip {
-	visibility: visible;
-}
-
-.card-link .tooltip::after {
-	content: " ";
-	position: absolute;
-	top: 100%;
-	left: 50%;
-	margin-left: -5px;
-	border-width: 5px;
-	border-style: solid;
-	border-color: black transparent transparent transparent;
 }
 
 .link-img {
@@ -77,22 +62,6 @@ body, html {
 	color: #BEBEBE;
 	margin-right: 12px;
 	font-family: 'Roboto Flex Thin', sans-serif;
-}
-
-.tooltip {
-	visibility: hidden;
-	position: absolute;
-	margin-left: -60px;
-	width: 120px;
-	bottom: 100%;
-	left: 50%;
-	padding: 5px 0;
-	border-radius: 6px;
-	z-index: 1;
-	background-color: black;
-	color: #fff;
-	font-family: 'Roboto Flex', sans-serif;
-	text-align: center;
 }
 
 @media (max-width: 500px) {
