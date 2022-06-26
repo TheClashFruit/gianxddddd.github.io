@@ -1,7 +1,7 @@
 const quotes = ["Software Developer, Gamer, and an Introvert",
-	"\"Programming is Art.\"", "@gianxddddd", "\"I watch Hentai by the way.\"",
+	"\"Programming is Art.\"", "@gianxddddd", "\"or MoreGianXD\"",
 	"\"Deez Nuts gotem\"", "aka Gian Borcillo", "hi you're stupid.",
-	"\"You're visiting a shit website!\"", "\"Your Mom\"", "\"I have been living for 15 years now.\"", 
+	"\"You're visiting a trash website!\"", "\"turi ip ip\"", "\"I have been living for 15 years now.\"", 
 	"\"I like to drink coca-cola.\"", "\"Don't doxx me please\"", "\"I am living in the hottest continent.\""];
 var intervalId;
 
