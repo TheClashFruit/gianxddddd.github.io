@@ -57,6 +57,13 @@ window.onload = function () {
 		startInterval();
 	});
 
+	// Create tooltips using tippy.js by the data-tippy-content attribute
+	tippy("[data-tippy-content]", {
+		animation: "perspective",
+		theme: "translucent",
+		touch: false
+	});
+
 	// Change quotes every 10 seconds
 	startInterval();
 }

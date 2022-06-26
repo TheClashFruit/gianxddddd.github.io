@@ -64,6 +64,11 @@ body, html {
 	font-family: 'Roboto Flex Thin', sans-serif;
 }
 
+.tippy-content {
+	/* Gotta inject tippy.js' tooltip font */
+	font-family: 'Roboto Flex', sans-serif !important;
+}
+
 @media (max-width: 500px) {
 	.card {
 		display: block;
