@@ -10,7 +10,7 @@ body, html {
 	display: flex;
 	position: absolute;
 	margin: auto;
-	overflow: auto;
+	overflow: hidden;
 	width: 450px;
 	max-height: 170px;
 	left: 0;
