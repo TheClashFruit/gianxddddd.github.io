@@ -47,12 +47,6 @@ function stopInterval() {
 	intervalId = null;
 }
 
-function isTouchable() {
-	return (('ontouchstart' in window) ||
-		(navigator.maxTouchPoints > 0) ||
-		(navigator.msMaxTouchPoints > 0));
-}
-
 window.onload = function () {
 	// Register focus and blur events for improving performance
 	document.addEventListener("focus", function () {
@@ -62,10 +56,8 @@ window.onload = function () {
 		stopInterval();
 	});
 
-	// Register hover event for some elements
+	// Register hover events for some elements
 	$(".image").hover(function () {
-		// Do nothing if device is touchable
-		if (isTouchable()) return;
 		changeImage();
 	});
 	$(".quote").hover(function () {
@@ -74,10 +66,13 @@ window.onload = function () {
 		startInterval();
 	});
 
-	// Register click event for image if device is touchable
-	$(".image").click(function () {
-		if (!isTouchable()) return;
-		changeImage();
+	// Register touch event for image if device is touchable
+	// We will use built-in DOM functions here
+	Array.prototype.forEach.call(document.getElementsByClassName("image"), function (element) {
+		element.addEventListener("touchend", function (event) {
+			event.preventDefault();
+			changeImage();
+		});
 	});
 
 	// Create tooltips using tippy.js by the data-tippy-content attribute
