@@ -38,6 +38,7 @@ body, html {
 .card-button {
 	border: none;
 	background: none;
+	user-select: none;
 }
 
 .card-link:hover .tooltip {
