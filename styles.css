@@ -4,6 +4,7 @@ body, html {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	user-select: none;
 }
 
 .card {
@@ -36,7 +37,6 @@ body, html {
 	display: inline-block;
 	cursor: pointer;
 	margin: 4px;
-	user-select: none;
 }
 
 .card-button {
@@ -115,7 +115,7 @@ body, html {
 	}
 }
 
-@media (max-height: 170px) {
+@media (max-height: 350px) {
 	.card {
 		animation-name: fade-out;
 		animation-duration: 100ms;
