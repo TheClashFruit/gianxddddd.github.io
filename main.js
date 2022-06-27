@@ -1,8 +1,10 @@
-const quotes = ["Software Developer, Gamer, and an Introvert",
-	"\"Programming is Art.\"", "@gianxddddd", "\"or MoreGianXD\"",
-	"\"Deez Nuts gotem\"", "aka Gian Borcillo", "hi you're stupid.",
-	"\"You're visiting a trash website!\"", "\"turi ip ip\"", "\"I have been living for 15 years now.\"", 
-	"\"I like to drink coca-cola.\"", "\"Don't doxx me please\"", "\"I am living in the hottest continent.\""];
+const quotes = ["Software Developer", "Absolute Gamer", "who makes stupid code",
+	"\"Programming is Art.\"", "@gianxddddd", "or MoreGianXD",
+	"\"Deez Nuts got em'\"", "aka Gian Borcillo", "hi you're stupid.",
+	"\"You're visiting a trash website!\"", "\"turi ip ip\"", "\"C/C++ gives me headaches.\"", 
+	"\"I like to drink coca-cola.\"", "Don't doxx me please", "I live inside your walls.",
+	"gift me the valve complete pack", "\"Web Development sucks my friend.\"", "stfu im listening to c418's aria math",
+	"\"Hover or tap the picture.\"", "don't even ask why my monitor is dirty", "\"Very profeshnal idot\""];
 var intervalId;
 
 function changeQuote() {
