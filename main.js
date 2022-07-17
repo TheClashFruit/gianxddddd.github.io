@@ -1,55 +1,57 @@
-const quotes = ["software developer", "what do you want", "who makes stupid code",
-	"i am a member of ThatCakeID", "@gianxddddd", "or MoreGianXD",
-	"i do powerpoint presentation aswell", "", "okay, what now?",
-	"my friends like to make fun of my last name", "real gaming moment", "is coding a hobby or a job?", 
-	"give me bobux for more info", "don't doxx me please", "i live inside your walls",
-	"gift me the valve complete pack", "webdev sucks my friend", "stfu im listening to c418's aria math",
-	"check out the background lol", "very profeshnal idot"];
-var intervalId;
+var interval = null;
+var quoteTippy = null;
 
-function changeQuote() {
-	if (document.readyState !== "complete") return;
-	$(".quote").fadeOut(function () {
-		var randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+function createInterval() {
+	if (interval != null) return;
+	interval = setInterval(fetchQuote, 10000);
+}
 
-		if (randomQuote != $(this).text()) {
-			$(this).text(randomQuote).fadeIn();
-		} else {
-			// If the random quote is equivalent to the current quote, then reset to the default quote
-			$(this).text("Professional idiot").fadeIn();
-		}
+function fetchQuote() {
+	$.get("https://api.quotable.io/random?maxLength=60", function (data, status) {
+		if (document.readyState !== "complete") return;
+		if (status != "success") return;
+		if (quoteTippy == null) return;
+		quoteTippy.setContent(`Quote by ${data.author}`);
+
+		$(".quote").fadeOut(function () {
+			$(this).text(data.content).fadeIn();
+		});
 	});
-
-	startInterval();
 }
 
-function startInterval() {
-	if (intervalId) return;
-	intervalId = setInterval(changeQuote, 5000);
-}
-
-function stopInterval() {
-	if (!intervalId) return;
-	clearInterval(intervalId);
-	intervalId = null;
+function fetchBackground() {
+	var bodyElement = $("body, html");
+	const url = "https://source.unsplash.com/random/1920x1080/?city,night";
+	if (document.readyState !== "complete") return;
+	bodyElement.css("background", `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("${url}")`);
+	bodyElement.css("background-attachment", "fixed");
+	bodyElement.css("background-position", "center");
+	bodyElement.css("background-repeat", "no-repeat");
+	bodyElement.css("background-size", "cover");
 }
 
 window.onload = function () {
 	// Register focus and blur events for improving performance
 	document.addEventListener("focus", function () {
-		startInterval();
+		// Re-create interval once the page has been focused
+		createInterval();
 	});
 	document.addEventListener("blur", function () {
-		stopInterval();
+		// Stop interval to improve performance when page is out of focus
+		clearInterval(interval);
+		interval = null;
 	});
 
 	// Create tooltips using tippy.js by the data-tippy-content attribute
-	tippy("[data-tippy-content]", {
+	// Note that quoteTippy is being initialized here as the first index of return value
+	quoteTippy = tippy("[data-tippy-content]", {
 		animation: "perspective",
 		theme: "translucent",
 		touch: false
-	});
+	})[0];
 
-	// Change quotes every 10 seconds
-	startInterval();
+	// Finally create the interval then fetch some quotes and backgrounds
+	createInterval();
+	fetchQuote();
+	fetchBackground();
 }
