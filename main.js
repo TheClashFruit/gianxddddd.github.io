@@ -45,10 +45,17 @@ window.onload = function () {
 	// Create tooltips using tippy.js by the data-tippy-content attribute
 	// Note that quoteTippy is being initialized here as the first index of return value
 	quoteTippy = tippy("[data-tippy-content]", {
-		animation: "perspective",
+		animation: "shift-toward",
+		arrow: false,
 		theme: "translucent",
 		touch: false
 	})[0];
+	
+	// Some tweaks to tippyQuote
+	quoteTippy.setProps({
+		animation: "shift-away",
+		placement: "bottom-end",
+	});
 
 	// Finally create the interval then fetch some quotes and backgrounds
 	createInterval();
