@@ -1,6 +1,6 @@
 kind: pipeline
 name: default
-
+ 
 steps:
 - name: Upload Files
   image: appleboy/drone-scp
