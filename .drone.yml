@@ -1,0 +1,31 @@
+kind: pipeline
+name: default
+
+steps:
+- name: Upload Files
+  image: appleboy/drone-scp
+  settings:
+    host: 
+      from_secret: ssh_ip
+    username:
+      from_secret: ssh_username
+    password: 
+      from_secret: ssh_password
+    port: 22
+    target: /var/www/gianxd.ga
+    source: ./
+- name: Delete Unnecessary Files
+  image: appleboy/drone-ssh
+  settings:
+    host:
+      from_secret: ssh_ip
+    username:
+      from_secret: ssh_username
+    password:
+      from_secret: ssh_password
+    port: 22
+    command_timeout: 2m
+    script:
+      - cd /var/www/gianxd.ga
+      - rm .drone.yml
+      - rm -rf .git/
