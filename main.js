@@ -55,6 +55,7 @@ window.onload = function () {
 	quoteTippy.setProps({
 		animation: "shift-away",
 		placement: "bottom-end",
+		touch: "hold"
 	});
 
 	// Finally create the interval then fetch some quotes and backgrounds
