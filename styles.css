@@ -1,0 +1,75 @@
+body, html {
+	background: #fff;
+}
+
+body.dark, html.dark {
+	background-color: #000;
+}
+
+div.navigation {
+	display: flex;
+	position: absolute;
+	justify-content: center;
+	align-items: center;
+	top: 50%;
+	left: 50%;
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.content {
+	padding: 8px;
+}
+
+h1.content {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+}
+
+p.content {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+}
+
+h1.content.dark {
+	color: #fff;
+}
+
+p.content.dark {
+	color: #fff;
+}
+
+button.content.dark {
+	color: #fff;
+}
+
+button.content {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: lighter;
+	background: transparent;
+	border: none !important;
+	transition-duration: 0.3s;
+	cursor: pointer;
+}
+
+button.content:disabled {
+	opacity: 0.5;
+	color: gray;
+	cursor: auto;
+}
+
+button.content:hover {
+	color: gray;
+}
+
+@media only screen and (max-width: 768px) {
+	/* For mobile devices */
+	div.navigation {
+		display: block;
+	}
+
+	.content {
+		padding-right: 1px;
+	}
+}
