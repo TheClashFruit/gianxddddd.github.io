@@ -1,2 +1,2 @@
-# The `me` subpage or the About page
-hehe i go brr
+# About page
+probably the useless page i ever made :P
