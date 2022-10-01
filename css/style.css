@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 0.3s;
+}
+body.darkMode {
+  background: black;
+  color: white;
+  transition-duration: 0.3s;
+}
+body.darkMode button {
+  color: white;
+}
+body.darkMode button:hover {
+  color: gray;
+}
+
+h1 {
+  padding: 8px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+button {
+  padding: 8px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: lighter;
+  font-size: 25px;
+  cursor: pointer;
+  background: transparent;
+  border: none !important;
+  transition-duration: 0.3s;
+}
+button:hover {
+  color: gray;
+}
+button:disabled {
+  opacity: 0.5;
+  color: gray;
+  cursor: auto;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 768px) {
+  .navigation {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
+.toggleColorScheme {
+  position: fixed;
+  width: 64px;
+  height: 64px;
+  bottom: 8px;
+  right: 8px;
+  background: transparent;
+  border: none;
+}
+
+/*# sourceMappingURL=style.css.map */
